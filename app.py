@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 #Chanel_secret=0ad68e1a4b617c942a86145fe8994871
-Line_Acees_Token=AuGyC3yQQYzA8iuoSt0G4epKlpneubvFF++mPezDYcd/poKjxryJbDt/l5J9T8e+d91WZQyS0iKnUcgIrscSaTpUpNouYaY8uJnwf4ocT5BkSNzqmq22/DFkAWmMjdcsa1HfqqTz3YKo9nzIXcMfpAdB04t89/1O/w1cDnyilFU=
+Line_Acees_Token="AuGyC3yQQYzA8iuoSt0G4epKlpneubvFF++mPezDYcd/poKjxryJbDt/l5J9T8e+d91WZQyS0iKnUcgIrscSaTpUpNouYaY8uJnwf4ocT5BkSNzqmq22/DFkAWmMjdcsa1HfqqTz3YKo9nzIXcMfpAdB04t89/1O/w1cDnyilFU="
 
 
 @app.route('/webhook', methods=['POST','GET'])
@@ -44,8 +44,7 @@ def ReplyMessage(Reply_token, TextMessage, Line_Acees_Token):
         'Authorization':Authorization
     }
 
-    data =
-    {
+    data ={
         "replyToken":Reply_token,
         "messages":
         [{
